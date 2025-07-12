@@ -1,0 +1,38 @@
+:root {
+  --font-family: 'Montserrat', Arial, sans-serif;
+  --font-size-base: 16px;
+  --color-primary: #1d1f22;
+  --color-accent: #5ece7b;
+  --color-bg: #fff;
+  --color-muted: #8d8f9a;
+  --color-border: #e5e5e5;
+  --color-shadow: rgba(168, 172, 176, 0.19);
+  --radius: 8px;
+  --transition: 0.2s;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background: var(--color-bg);
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.App {
+  min-height: 100vh;
+  background: var(--color-bg);
+  margin-top: 68px;
+}

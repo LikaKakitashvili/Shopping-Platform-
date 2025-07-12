@@ -1,0 +1,300 @@
+.shipping-method-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 48px 0 64px 0;
+  background: var(--background, #fff);
+  min-height: 100vh;
+  padding-right: 50vw;
+}
+
+.shipping-method-form {
+  flex: 1 1 520px;
+  max-width: 520px;
+  min-width: 340px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.shipping-method-card {
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 0;
+}
+
+.shipping-method-contact-card {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.shipping-method-contact-row {
+  display: flex;
+  gap: 8px;
+  font-size: 15px;
+  color: #222;
+}
+.shipping-method-contact-label {
+  font-weight: 500;
+  color: #888;
+  min-width: 60px;
+}
+.shipping-method-contact-value {
+  font-weight: 500;
+  color: #222;
+}
+
+.shipping-method-breadcrumbs {
+  color: var(--text-secondary, #888);
+  font-size: 14px;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+.shipping-method-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary, #222);
+  margin-bottom: 4px;
+}
+
+.shipping-method-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+.shipping-method-option {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1.5px solid #e0e0e0;
+  padding: 18px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: border 0.2s, box-shadow 0.2s;
+  margin-bottom: 0;
+}
+.shipping-method-option--active {
+  border: 2px solid var(--primary, #5ece7b);
+  box-shadow: 0 2px 8px rgba(94,206,123,0.08);
+  background: #f7f7f9;
+}
+.shipping-method-option input[type="radio"] {
+  accent-color: var(--primary, #5ece7b);
+  width: 20px;
+  height: 20px;
+}
+.shipping-method-option-title {
+  font-weight: 600;
+  color: var(--text-primary, #222);
+}
+.shipping-method-option-desc {
+  color: var(--text-secondary, #888);
+  font-size: 15px;
+  margin-left: 8px;
+}
+.shipping-method-option-price {
+  margin-left: auto;
+  font-weight: 600;
+  color: var(--primary, #5ece7b);
+  font-size: 16px;
+}
+
+.shipping-method-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+.shipping-method-back {
+  color: var(--primary, #5ece7b);
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.shipping-method-back:hover {
+  color: #388e3c;
+}
+.shipping-method-next {
+  background: #56B280;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 40px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  letter-spacing: 0.5px;
+}
+.shipping-method-next:hover {
+  background: #4caf50;
+}
+
+.shipping-method-page .shipping-method-summary {
+  flex: 0 1 720px;
+  background-color: #ececec !important;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 40px 40px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-width: 570px;
+  height: 100vh;
+  width: 50vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.shipping-method-summary-product,
+.shipping-method-summary-table {
+  max-width: 480px;
+  margin-left: 10%;
+  width: 100%;
+}
+.shipping-method-summary-product {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 32px;
+  position: relative;
+  min-height: 96px;
+}
+.shipping-method-summary-product-imgwrap {
+  position: relative;
+  display: inline-block;
+}
+.shipping-method-summary-product img {
+  width: 134px;
+  height: 134px;
+  object-fit: cover;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: none;
+  position: relative;
+  display: block;
+}
+.shipping-method-summary-qty {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%,-50%);
+  background: var(--primary, #5ece7b);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 2;
+}
+.shipping-method-summary-name {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-primary, #222);
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  min-height: 32px;
+}
+.shipping-method-summary-price {
+  font-size: 24px;
+  color: var(--primary, #5ece7b);
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+.shipping-method-summary-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1.5px solid #e0e0e0;
+  border-bottom: 1.5px solid #e0e0e0;
+  margin-top: 16px;
+  margin-bottom: 0;
+  background: none;
+  box-shadow: none;
+}
+.shipping-method-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: var(--text-primary, #222);
+  font-weight: 400;
+  padding: 8px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.shipping-method-summary-row--total {
+  font-weight: 700;
+  font-size: 20px;
+  color: #222;
+  margin-top: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shipping-method-summary {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ececec;
+}
+
+.shipping-method-summary-products {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+  padding-top: 16px;
+  min-height: 0;
+}
+
+.shipping-method-summary-table {
+  flex-shrink: 0;
+  background: none;
+  box-shadow: none;
+  border-top: 1.5px solid #e0e0e0;
+  border-bottom: 1.5px solid #e0e0e0;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.shipping-method-contact-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+  .shipping-method-page {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0;
+  }
+  .shipping-method-form, .shipping-method-summary {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+} 

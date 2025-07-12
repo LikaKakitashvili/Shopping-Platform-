@@ -1,0 +1,104 @@
+.navbar {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: var(--color-bg);
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__nav {
+  width: 100%;
+  max-width: 1350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__categories {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 32px 0 18px 0;
+  border-bottom: 2px solid transparent;
+  transition: border var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.navbar__link--active {
+  color: var(--color-accent);
+  border-bottom: 2.5px solid var(--color-accent);
+  font-weight: 700;
+}
+
+.navbar__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar__currency button {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 15px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navbar__currency button:last-child {
+  margin-right: 0;
+}
+
+.navbar__currency button:focus,
+.navbar__currency button:hover {
+  color: #5ece7b;
+}
+
+.navbar__cart {
+  background: none;
+  border: none;
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navbar__cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #1d1f22;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
